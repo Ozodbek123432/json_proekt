@@ -96,3 +96,4 @@ info = {
 }
 with open('infe.json', 'w') as my_json:
      json.dump(info, my_json, indent=5)
+a,b=list(map(int,input("nimadir  kritng").split("nimadir")))
