@@ -82,7 +82,7 @@ import json
 # print(new_dict)
 # print(type(new_dict))
 #
-# with open('infe.json', 'w') as my_json:
+# with open('info.json', 'w') as my_json:
 #      my_json.write = json.load(my_json)
 #      new_dict["sayod"] = "sayod"
 #      print(new_dict)
