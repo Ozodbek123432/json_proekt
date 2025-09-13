@@ -94,6 +94,7 @@ info = {
      "agae": [16,12,12],
      "holati":["juda yashi",["ortacha"],["juda yoamon"]]
 }
-with open('infe.json', 'w') as my_json:
-     json.dump(info, my_json, indent=5)
+
+with open('info.json', 'w') as my_json:
+     json.dump(info, my_json, indent=4)
 a,b=list(map(int,input("nimadir  kritng").split("nimadir")))
