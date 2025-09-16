@@ -17,70 +17,56 @@
 #      my_json.write = json.load(my_json)
 #      new_dict["sayod"] = "sayod"
 #      print(new_dict)
+# TypeError: operatsiya noto'g'ri turdagi ob'ektga qo'llanilganda ko'tariladi.
 #
+# ValueError: Funktsiya to'g'ri turdagi, lekin noto'g'ri qiymatga ega argumentni qabul qilganda ko'tariladi.
 #
+# IndexError: ketma-ketlik indeksi diapazondan tashqarida bo'lganda ko'tariladi.
 #
+# KeyError: Kalit lug'atda topilmasa ko'tariladi.
 #
+# FileNotFoundError: Fayl yoki katalog topilmasa ko'tariladi.
 #
+# Import xatosi: modulni import qilib bo'lmaganda yoki modul nomi topilmaganda ko'tariladi.
 #
+# AttributeError: Ob'ektda atribut mavjud bo'lmaganda yoki undan foydalanish mumkin bo'lmaganda ko'tariladi.
 #
+# SyntaxError: Kodda sintaksis xatosi aniqlanganda ko'tariladi.
 #
+# IndentationError: Indentatsiya xatosi aniqlanganda ko'tariladi.
 #
+# OverflowError: arifmetik amal natijasi koʻrsatish uchun juda katta boʻlganda koʻtariladi.
 #
-# ValueError: Ko'p funktsiya to'g'ridan-to'g'ri argument to'g'ridan-to'g'ri to'g'ridan-to'g'ri to'g'ridan-to'g'ri to'la-to'kis bo'lmaydi.
+# MemoryError: Operatsiyani bajarish uchun etarli xotira bo'lmaganda ko'tariladi.
 #
-# IndexError: IndexError: Vizyvaetsya, kogda indeks posledovatelnosti naxoditsya uchun predelami dopustimogo diapazona.
+# PermissionError: Fayl yoki katalogda amalni bajarish uchun ruxsatlar yetarli boʻlmaganda koʻtariladi.
 #
-# KeyError: vyzyvaetsya, kogda klyuch ne nayden v slovare.
+# NameError: o'zgaruvchi nomi mahalliy yoki global miqyosda topilmasa ko'tariladi.
 #
-# FileNotFoundError: Kogda fayl yoki direktoriya nayden emas.
+# init(self, ...): Yangi ob'ektni ishga tushiradi. Bu usul sinfning yangi nusxasi yaratilganda chaqiriladi.
 #
-# ImportError: Vizyvaetsya, kogda ne udalos importirovat modul yoki imya modulya na naydeno.
+# del(self): ob'ektni buzuvchi. Ob'ekt yo'q qilinganda chaqiriladi. U Python-da kamdan-kam qo'llaniladi, chunki axlat yig'ish avtomatikdir.
 #
-# AttributeError: Ba'zi hollarda, kogda atribut ob'ekti sushchestvuet yoki foydalanish mumkin emas.
+# str(self): Ob'ektning satr tasvirini qaytaradi. str() usuli bu usulni chaqiradi.
 #
-# SyntaxError: Vizyvaetsya, kogda obnarujena sintaksicheskaya oshibka v kode.
+# repr(self): Ob'ektning satrli tasviri. Qaytish qiymati Python ob'ektni qayta yaratish uchun bajarishi mumkin bo'lgan satr bo'lishi kerak. repr() usuli bu usulni chaqiradi.
 #
-# IndentationError: Vyzyvaetsya, kogda obnarujena oshibka v otstupax.
+# eq(self, other): Ikki ob'ekt teng yoki yo'qligini aniqlaydi. == usuli bu usulni chaqiradi.
 #
-# OverflowError: Obuna bo'lish uchun arifmeticheskoy operatsii slishkom valik natijasida paydo bo'ladi.
+# ne(self, other): Ikki ob'ekt teng emasligini aniqlaydi. != usuli bu usulni chaqiradi.
 #
-# MemoryError: vyzyvaetsya, kogda nedostatochno pamyati vypolneniya operatsii uchun.
+# lt(self, other): Bir ob'ekt boshqasidan kichik yoki yo'qligini aniqlaydi. < usuli bu usulni chaqiradi.
 #
-# Ruxsatnoma xatosi: Fayl yoki direktoriyani o'zgartirish uchun hech qanday xvataet yo'q.
+# le(self, other): Bir ob'ekt boshqasidan kichik yoki teng ekanligini aniqlaydi. <= usuli bu usulni chaqiradi.
 #
-# TypeError: Vyzyvaetsya, kogda operatsiya primenyaetsya k ob'ektu nesootvetstvuyuscheho tipa.
+# gt(self, other): Bir ob'ekt ikkinchisidan katta yoki yo'qligini aniqlaydi. > usuli bu usulni chaqiradi.
 #
-# NameError: Vizyvaetsya, kogda imya peremennoy ne naydeno v lokalnoy yoki globalnoy regioni vidimosti.
+# ge(self, other): Bir ob'ekt ikkinchisidan katta yoki teng ekanligini aniqlaydi. >= usuli bu usulni chaqiradi.
 #
-# 03-25-guruh, [13.09.2025 19:56]
-# Python-da OOPning asosiy usullari:
+# len(self): Ob'ekt uzunligini qaytaradi. len() usuli bu usulni chaqiradi.
 #
-# init(self, ...): Initsializatsiya yangi ob'ekta. Etot metodi vyzyvaetsya pri sozdanii yangi ekzemplyara klassa.
+# getitem(self, key): Qiymatni kalit bo'yicha qaytaradi. obj[key] usuli bu usulni chaqiradi.
 #
-# del(self): Destruktor ob'ekti. vyzyvaetsya, kogda ob'ekt unichtozhaetsya. V Python on redko ispolzuetsya, tak ka sborka musora avtomaticheskaya.
+# setitem(self, key, value): Qiymatni kalit bo'yicha o'rnatadi. obj[key] = qiymat usuli bu usulni chaqiradi.
 #
-# str(self): Vozvrashchaet strokovoe predstavlenie ob'ekta. Metod str() vyzyvaet etot usuli.
-#
-# repr(self): Predstavlenie ob'ekta v vide stroki. Vozvrashchaemoe znachenie to'liq strokoy, kotora byt vypolnena Python uchun vosso'zdaniya ob'ektlarini. Metod repr() vyzyvaet etot usuli.
-#
-# eq(self, other): Opredelyaet, ravny li dva ob'ekta. Metod == vyzyvaet etot usuli.
-#
-# ne(self, other): Opredelyaet, ne ravny li dva ob'ekta. Metod != vyzyvaet etot usuli.
-#
-# lt(self, other): Opredelyaet, menshe li ob'ekt, chem drugoy. Metod < vyzyvaet etot metod.
-#
-# le(self, other): Opredelyaet, menshe ili raven li ob'ekt, chem drugoy. Metod <= vyzyvaet etot usuli.
-#
-# gt(self, other): Opredelyaet, katta ob'ekt, chem drugoy. Metod > vyzyvaet etot usuli.
-#
-# ge(self, other): Opredelyaet, bolshe ili raven li ob'ekt, chem drugoy. Metod >= vyzyvaet etot usuli.
-#
-# len(self): Vozvrashchaet dlinu ob'ekta. Metod len() vyzyvaet etot usuli.
-#
-# getitem(self, key): Vozvrashchaet znachenie po klyuchu. Metod obj[kalit] vyzyvaet etot usuli.
-#
-# setitem(self, kalit, qiymat): Ustanavlivaet znachenie po klyuchu. Metod obj[kalit] = qiymat vyzyvaet etot metod.
-#
-# delitem(self, key): Udalyaet znachenie po klyuchu. Metod del obj[kalit] vyzyvaet etot metod.
-
+# delitem(self, key): Qiymatni kalit bo'yicha o'chiradi. Del obj[key] usuli bu usulni chaqiradi.
