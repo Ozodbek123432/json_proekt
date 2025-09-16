@@ -59,7 +59,7 @@
 import json
 #jsonga otkazish uchun 2 qil turib borbular
 #dumps - shunchaki dictni ogiradi
-#dump - dictni jsonga otkazadi va alaohida ga  yozish beradi
+#dump - dictni jsonga otkazadi va alaohida json fayiola yozadi
 #json dict ga orgirishni 2 xil usuli bor
 #loads - shunchaki dict ogriadi
 #load  - dict ogirrib aolahiadi ga yoziberadi
@@ -86,15 +86,14 @@ import json
 #      my_json.write = json.load(my_json)
 #      new_dict["sayod"] = "sayod"
 #      print(new_dict)
-
-import json
-info = {
-     "ustozim":["janatim ustozim juda  ajoyib juda mmehribon"],
-     "Nmae": ["ozodbek","sayodeb","ziyoberk",],
-     "agae": [16,12,12],
-     "holati":["juda yashi",["ortacha"],["juda yoamon"]]
-}
-
-with open('info.json', 'w') as my_json:
-     json.dump(info, my_json, indent=4)
-a,b=list(map(int,input("nimadir  kritng").split("nimadir")))
+# new_dictimport json
+# info = {
+#      "ustozim":["janatim ustozim juda  ajoyib juda mmehribon"],
+#      "Nmae": ["ozodbek","sayodeb","ziyoberk",],
+#      "agae": [16,12,12],
+#      "holati":["juda yashi",["ortacha"],["juda yoamon"]]
+# }
+#
+# with open('info.json', 'w') as my_json:
+#      json.dump(info, my_json, indent=4)
+# a,b=list(map(int,input("nimadir  kritng").split("nimadi
