@@ -70,3 +70,10 @@
 # setitem(self, key, value): Qiymatni kalit bo'yicha o'rnatadi. obj[key] = qiymat usuli bu usulni chaqiradi.
 #
 # delitem(self, key): Qiymatni kalit bo'yicha o'chiradi. Del obj[key] usuli bu usulni chaqiradi.
+# chaqiradidef kmh_to_ms(kmh):
+#     return kmh * 1000 / 3600
+#
+# # Misol
+# kmh = float(input("km/h da tezlikni kiriting: "))
+# ms = kmh_to_ms(kmh)
+# print(f"{kmh} km/h = {ms:.2f} m/s")
