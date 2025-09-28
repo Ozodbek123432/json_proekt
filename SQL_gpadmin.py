@@ -41,3 +41,18 @@
 # -- 7 vazifa
 # SELECT COUNT(city)
 # FROM customers
+# SELECT freight
+# FROM orders
+# WHERE freight BETWEEN 10 AND 50
+# --  3 VAZIFA
+# SELECT  product_name
+# FROM products
+# ORDER BY  product_name ASC
+# -- 4 VAZIFA
+# SELECT   discontinued
+# FROM products
+# WHERE  discontinued = 1
+# --5 VAZIFA
+# SELECT *
+# FROM customers
+# WHERE country IN ('German','UK','USA')
