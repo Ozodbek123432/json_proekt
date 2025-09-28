@@ -1,5 +1,6 @@
 import telebot
 from telebot import types
+import json
 
 TOKEN = '8461672342:AAFO9iy5RQPBAnHipZJ0knp_RnbgavXhJh8'
 bot = telebot.TeleBot(TOKEN)
@@ -34,7 +35,10 @@ def handle_contact(message):
         )
         a = {
             first_name:phone_number
-        }
+            }
         
         print(a)
+
+    with open('info.json', 'w') as my_json:
+         json.dump(a, my_json, indent=4)
 bot.polling()
