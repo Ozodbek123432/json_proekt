@@ -81,6 +81,12 @@
 # --2 vazifa
 # FROM orders
 # ORDER BY required_date ASC shipped_date DESC
+
+#---------------------uy ishi
+# --1 vazifa
+# SELECT *
+# FROM orders
+# WHERE ship_country IN ('France','Austria','USA')
 # --3  vazifa
 # SELECT *
 # FROM products
@@ -92,8 +98,7 @@
 # WHERE quantity_per_unit > '30'
 # ORDER BY quantity_per_unit DESC
 #
-# # --5 vazifa
-# # SELECT required_date, order_date
-# # FROM orders
-# # WHERE ship_country = 'USA';
-
+#--5 vazifa
+# SELECT required_date, order_date
+# FROM orders
+# WHERE ship_country = 'USA';
